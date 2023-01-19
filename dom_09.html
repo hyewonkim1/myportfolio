@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM_09</title>
+  <script>
+
+    document.addEventListener('DOMContentLoaded',()=>{
+
+      let img = document.querySelector('.img > img')
+
+      //방법1
+      // img.onmouseover = over
+      // img.onmouseout = out
+
+      //방법2
+      // img.addEventListener('mouseover', over)
+      // img.addEventListener('mouseout', out)
+
+      
+      // function over() {
+      //   img.src = './images/new01_on.jpg'
+      // }
+
+      // function out() {
+      //   img.src = './images/new01_off.jpg'
+      // }
+
+      //간단한 경우에는 EventListener이용
+      img.addEventListener('mouseover', function(){
+        this.setAttribute('src','./images/new01_on.jpg')
+
+        //img src 속성을 넣어주어야 한다.
+        //속성 제공해 줄때 사용. setAttribute
+      })
+
+      //이벤트 일으키는 객체와 실행되는 객체가 같을 경우 this로 받을 수 있다.
+      //this로 받으면 화살표함수면 실행X , function(){}사용하면 실행O 
+      //화살표 함수안의 객체는 화살표 함수 안에서 찾기 때문, function안에 this는 실제 객체 찾아가서 this로 받기 때문.
+
+      img.addEventListener('mouseout',()=>{
+        img.setAttribute('src','./images/new01_off.jpg')
+      })
+
+
+    })
+
+
+
+    
+     
+    
+
+  </script>
+  <style>
+    
+
+
+  </style>
+</head>
+<body>
+
+  <div class="img">
+    <img src="./images/new01_off.jpg" alt="마우스 오버이벤트">
+  </div>
+  
+
+
+  
+
+
+
+
+</body>
+</html>

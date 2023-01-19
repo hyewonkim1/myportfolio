@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery_full_page_animate</title>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/jquery.mousewheel.min.js"></script>
+
+  <script>
+    $(function(){
+      $('section').mousewheel(function(e,delta){
+        //mousewheel은 page단위로 넘어간다. page => section 이니까 
+        //e:마우스 스크롤이 일어났다. dealta:스크롤이 위로? 아래로? 어디로?
+
+        if(delta > 0) { //mousewheel up
+          let prev = $(this).prev().offset().top;
+          //내바로 위 형 페이지의 시작하는 좌표를 찾아서 스크롤탑에 맞추겠다.
+          $('html, body').stop().animate({scrollTop:prev},1000)
+        } else if(delta < 0) {
+          let next = $(this).next().offset().top;
+          //내바로 밑에 동생의 시작하는 좌표를 찾아서 스크롤탑에 맞추겠다.
+          $('html, body').stop().animate({scrollTop:next},1000)
+        }
+      })//mousewheel_event
+
+        $(window).scroll(function(){
+
+          if($(this).scrollTop() == $('.page02').offset().top) {
+            $('.page02-1').fadeIn(500);
+            $('.page02-2').delay(500).fadeIn(500);
+            $('.page02-3').delay(1000).fadeIn(500);
+          } else {
+            $('.page02 .sub_box div').fadeOut();
+          }
+
+          if($(this).scrollTop() == $('.page03').offset().top) {
+            $('.page03-1').animate({top: 0},500);
+            $('.page03-2').delay(500).animate({top: 0},500);
+            $('.page03-3').delay(1000).animate({top: 0},500);
+          }
+        })//window scroll_event
+    })
+
+   
+
+    
+</script>
+
+
+
+  <style>
+    *{margin: 0; padding: 0;}
+
+    .wrap section {
+      width: 100%;
+      height: 100vh;
+      border: 1px solid black;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrap section .sub_box {
+      width: 940px;
+      height: 300px;
+      border: 1px solid black;
+      overflow: hidden;
+    }
+    .wrap section .sub_box div {
+      width: 300px;
+      height: 300px;
+      background-color: #ccc;
+      float: left;
+    }
+    .wrap .page02 .sub_box div:nth-child(2) {margin: 0 20px;}
+
+    .wrap .page01 .sub_box {
+      background-color: #ccc;
+      opacity: 1;
+      animation-name: intro;
+      animation-duration: 3s;
+    }
+    @keyframes intro {
+      0% {opacity: 0;}
+      10% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    .wrap .page02 .sub_box div {
+      display: none;
+    }
+    .wrap .page03 .sub_box {
+      position: relative;
+    }
+    .wrap .page03 .sub_box div {
+      position: absolute;
+      top: 300px;
+    }
+    .wrap .page03 .sub_box .page03-1 {left: 0;}
+    .wrap .page03 .sub_box .page03-2 {left: 320px;}
+    .wrap .page03 .sub_box .page03-3 {left: 640px;}
+
+  
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="page01 intro">
+      <div class="sub_box">
+        <h1>Intro</h1>
+      </div>
+    </section><!--page01-->
+
+    <section class="page02">
+      <div class="sub_box">
+        <div class="page02-1">page02-1</div>
+        <div class="page02-2">page02-2</div>
+        <div class="page02-3">page02-3</div>
+      </div>
+    </section><!--page02-->
+
+    <section class="page03">
+      <div class="sub_box">
+        <div class="page03-1">page03-1</div>
+        <div class="page03-2">page03-2</div>
+        <div class="page03-3">page03-3</div>
+      </div>
+    </section><!--page03-->
+
+  </div>
+
+ 
+
+
+  
+</body>
+</html>
