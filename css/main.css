@@ -1309,10 +1309,11 @@ a{text-decoration: none; color: black;}
 
 .wrap .page08 .sub_box08 .contact_box {
   width: 1000px;
-  height: 120px;
+  /* height: 120px; */
   margin: 0 auto;
   text-align: center;
   font-size: 40px;
+
   /* background-color: aliceblue; */
   /* -webkit-backdrop-filter: grayscale(.8);
   backdrop-filter: grayscale(.8); */
@@ -1320,6 +1321,10 @@ a{text-decoration: none; color: black;}
   margin-top: 150px;
 }
 .wrap .page08 .sub_box08 .contact_box .contact {
+  width: 500px;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
   font-family: 'Nanum Pen Script', cursive;
   font-size: 48px;
   color: rgb(253, 251, 252);
