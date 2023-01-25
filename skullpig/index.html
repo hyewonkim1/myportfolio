@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skullpig_site</title>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/jquery.scrollTo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+  <div class="popup_wrap">
+    <div class="popup_close"><a href="#" id="popup_btn"></a></div>
+    <div class="popup_img">
+      <img src="./images/popup.jpeg" alt="팝업이미지">
+    </div>
+  </div>
+
+
+  <header class="header" id="header">
+    <nav class="gnb_box">
+      <div class="gnb">
+      <ul class="gnb01">
+        <li>
+          <select>
+            <option selected>KOR</option>
+            <option>ENG</option>
+            <option>JPN</option>
+      
+          </select>
+        </li>
+        <li><a href="#">찜</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">검색</a></li>
+      </ul>
+
+      <ul class="gnb02">
+        <li><a href="#" class="openPopup">로그인</a></li>
+        <div class="login_popup">
+          <div class="login_close">닫기</div>
+          <div class="wrap">
+            <div class="login">
+              <div class="idpw">
+                <div class="id">                
+                  <span>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" id="user_id" maxlength="20"></div>
+                <div class="pw">                
+                  <span>비밀번호&nbsp;&nbsp;</span><input type="password" id="user_pw" maxlength="20"></div>
+
+                <div class="search">
+                  <div class="search01">비밀번호 찾기</div>
+                  <div class="search02">아이디 찾기</div>
+                </div><!--search-->
+              </div><!--idpw-->
+
+              <div class="button_box">
+                <button type="button"  class="button_login">로그인</button>
+                <button onclick="openWindow()" class="button_join">회원가입</button>
+              </div>
+            </div><!--login-->
+          </div><!--wrap-->
+        </div><!--login_popup-->
+        <li><a onclick="openWindow()">회원가입</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+    </div><!--gnb-->
+    </nav><!--gnb_box-->
+
+    <div class="logo_box">
+      <div class="logo">
+        <a href="index.html">SKULLPIG</a>
+      </div>
+    </div><!--logo_box-->
+
+    <div class="lnb_box">
+      <input type="checkbox" id="chk_lnb">
+
+    <div class="lnb">
+    <label for="chk_lnb">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+        <ul class="lnb01">
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">1+1</a></li>
+          <li><a href="#">Signiature</a>
+          <ul>
+            <li>플렉스 엑스</li>
+            <li>플렉스 페더</li>
+            <li>플렉스 오리지널</li>
+            <li>플렉스 프로</li>
+            <li>플렉스 엑어</li>
+          </ul></li>
+          <li class="last_lnb01"><a>Sale</a></li>
+        </ul>
+        
+
+        <ul class="lnb02">
+          <li><a href="#">상의</a>
+            <ul>
+              <li>브라탑</li>
+              <li>탱크탑</li>
+              <li>숏슬리브</li>
+              <li>롱슬리브</li>
+              <li>커버업</li>
+              <li>아우터</li>
+            </ul>
+          </li><!--top-->
+
+          <li><a href="./sub_page/sub_index.html">하의</a>
+            <ul>
+              <li>레깅스</li>
+              <li>크롭레깅스</li>
+              <li>롱팬츠</li>
+              <li>숏팬츠</li>
+              <li>스커트/드레스</li>
+            </ul>
+         </li>
+          <li><a href="#">맨즈</a>
+            <ul>
+                <li>상의</li>
+                <li>하의</li>
+            </ul>
+         </li>
+          <li><a href="#">악세사리</a>
+          <ul>
+            <li>홈프용품</li>
+            <li>마스크</li>
+            <li>이너웨어</li>
+            <li>가방/모자</li>
+            <li>양말</li>
+          </ul></li>
+        </ul>
+
+
+      </div><!--lnb-->
+      
+      <div class="lnb_txt">
+        <div class="txt_top">
+          <ul class="txt01">
+            <li class="txt_title">우먼</li>
+            <li>상의</li>
+            <li><a href="./sub_page/sub_index.html">하의</a></li>
+            <li>아우터</li>
+          </ul>
+          <ul class="txt02">
+            <li class="txt_title">맨즈</li>
+            <li>상의</li>
+            <li>하의</li>
+          </ul>
+          <ul class="txt03">
+            <li class="txt_title">악세서리</li>
+            <li>홈트용품</li>
+            <li>마스크</li>
+            <li>이너웨어</li>
+            <li>가방/모자</li>
+            <li>양말</li>
+          </ul>
+          <ul class="txt04">
+            <li class="txt_title">커뮤니티</li>
+            <li>공지사항</li>
+            <li>이벤트</li>
+            <li>포토리뷰</li>
+            <li>브랜드스토리</li>
+          </ul>
+          <ul class="txt05">
+            <li class="txt_title">브랜드</;class=>
+            <li>어퍼스트롭</li>
+            <li>앤드필라테스</li>
+            <li>제이비스튜디오</li>
+            <li>오프라인</li>
+          </ul>
+        </div><!--txt_top-->
+   
+        <div class="txt_bottom">
+          <div class="txt67">
+            <div class="txt06">
+              <p class="time">고객센터운영시간</p>
+              <p>070-7733-4698</p>
+              <p>070-7733-4699</p>
+              <p class="time_notice">통화량이 많을때는 게시판을 이용해주세요</p>
+            </div>
+            <div class="txt07">
+              <p class="time">상담시간안내</p>
+              <p>평일 10:00 - 17:00</p>
+              <p>점심 12:30 - 13:30</p>
+              <p class="time_notice">토요일, 일요일 및 공휴일은 휴무입니다</p>
+            </div>
+          </div>
+          <div class="txt08">
+            <div class="icon01">
+              <div class="icon_img">
+                <img src="./images/icon01.jpg" alt="">
+              </div>
+              <div class="icon_txt">Q&A</div>
+            </div>
+            <div class="icon02">
+              <div class="icon_img">
+                <img src="./images/icon02.jpg" alt="">
+              </div>
+              <div class="icon_txt">공지사항</div>
+            </div>
+            <div class="icon03">
+              <div class="icon_img">
+                <img src="./images/icon03.jpg" alt="">
+              </div>
+              <div class="icon_txt">문의하기</div>
+            </div>
+            
+          </div>
+
+        </div><!--txt_bottom-->
+      </div><!--lnb_txt-->
+
+    </div><!--lnb_box-->
+  </header>
+
+
+<!-- <div class="visual_main">
+  <div class="frame">
+    <ul>
+      <li><img src="./images/visual_main01.jpg" alt=""></li>
+      <li><img src="./images/visual_main02.jpg" alt=""></li>
+      <li><img src="./images/visual_main03.jpg" alt=""></li>
+      <li><img src="./images/visual_main04.jpg" alt=""></li>
+      <li><img src="./images/visual_main05.jpg" alt=""></li>
+      <li><img src="./images/visual_main01.jpg" alt=""></li>
+   
+    </ul>
+  </div>
+</div> -->
+
+   <!-- Swiper -->
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/visual_main01.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/visual_main02.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/visual_main03.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/visual_main04.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/visual_main05.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+<div class="banner_box">
+  <div class="banner01"><img src="./images/banner01.jpg" alt=""></div>
+  <div class="banner02"><img src="./images/banner02.jpg" alt=""></div>
+</div><!--banner-->
+
+
+<section class="best_sheet_box">
+ 
+  <input type="radio" id="rad01" name="rad_img" checked>
+  <input type="radio" id="rad02" name="rad_img">
+  <input type="radio" id="rad03" name="rad_img">
+  <input type="radio" id="rad04" name="rad_img">
+
+  <div class="best_label">
+    <label for="rad01" class="lab01">1+1</label>
+    <label for="rad02" class="lab02">아우터</label>
+    <label for="rad03" class="lab03">악세사리</label>
+    <label for="rad04" class="lab04">맨즈</label>
+
+    <p class="best">Best</p>
+    <p class="item">item</p>
+  </div>
+
+  <div class="best_sheet">
+    <div class="sheet01">
+      <div class="best_item">
+
+        <div class="best_13 best">
+
+          <div class="best01">
+            <div class="best01_img"></div>
+            <div class="best01_text">
+
+              <div class="best01_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div>
+                </div>
+                <div class="txt01_02">리뷰 5,321</div>
+              </div>
+              <div class="best01_txt02">[New]플렉스 에어 레깅스 ①+①</div>
+              <div class="best01_txt03">
+                <div class="txt03_01">59,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">118,000</div>
+              </div>
+              <div class="best01_txt04">
+                <div class="txt04_01">당일배송</div>
+                <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div>
+              </div>
+
+            </div><!--best01_text-->
+          </div>
+
+          <div class="best02">
+            <div class="best02_img"></div>
+            <div class="best02_text">
+              <div class="best02_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div>
+                </div>
+                <div class="txt01_02">리뷰 11,481</div>
+              </div>
+              <div class="best02_txt02">제로 뉴 베이직 레깅스 ①+①</div>
+              <div class="best02_txt03">
+                <div class="txt03_01">29,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">76,000</div>
+              </div>
+              <div class="best02_txt04">
+                <div class="txt04_01">당일배송</div>
+                <div class="txt04_02">주문폭주</div>
+                <!-- <div class="txt04_03">시그니처</div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="best03">
+
+            <div class="best03_img"></div>
+            <div class="best03_text">
+
+              <div class="best03_txt01">
+
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <!-- <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div>
+
+                <div class="txt01_02">리뷰 1,234</div>
+              </div>
+
+              <div class="best03_txt02">제로 기모 레깅스 ①+①</div>
+              <div class="best03_txt03">
+                <div class="txt03_01">34,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">96,000</div>
+              </div>
+              <div class="best03_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <div class="txt04_02">주문폭주</div>
+                <!-- <div class="txt04_03">시그니처</div> -->
+              </div>
+            </div>
+          </div>
+
+          </div><!--best_13-->
+
+
+        <div class="best_46 best">
+
+          <div class="best04">
+            <div class="best04_img"></div>
+            <div class="best04_text">
+
+              <div class="best04_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div>
+                </div>
+                <div class="txt01_02">리뷰 1,028</div>
+              </div>
+              <div class="best04_txt02">에어라이트 라인 자켓 ①+①</div>
+              <div class="best04_txt03">
+                <div class="txt03_01">59,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">154,000</div>
+              </div>
+              <div class="best04_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <div class="txt04_02">주문폭주</div>
+                <!-- <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+
+          </div>
+          
+
+          <div class="best05">
+            <div class="best05_img"></div>
+            <div class="best05_text">
+              <div class="best05_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <!-- <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div>
+                <div class="txt01_02">리뷰 1,904</div>
+              </div>
+              <div class="best05_txt02">제로 윈터 스트레잇 기모팬츠 ①+①</div>
+              <div class="best05_txt03">
+                <div class="txt03_01">52,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">112,000</div>
+              </div>
+              <div class="best05_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div> -->
+                <div class="txt04_03">시그니처</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="best06">
+            <div class="best06_img"></div>
+            <div class="best06_text">
+              <div class="best06_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <!-- <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div>
+                <div class="txt01_02">리뷰 1,573</div>
+              </div>
+              <div class="best06_txt02">[소프텍스] 조거 팬츠 ①+①</div>
+              <div class="best06_txt03">
+                <div class="txt03_01">54,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">104,000</div>
+              </div>
+              <div class="best06_txt04">
+                <div class="txt04_01">당일배송</div>
+                <div class="txt04_02">주문폭주</div>
+                <!-- <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+        </div><!--best_46-->
+
+      </div><!--best_item-->
+    </div><!--sheet01-->
+
+
+    <div class="sheet02">
+      <div class="best_outer">
+
+        <div class="outer_13 outer">
+
+          <div class="outer01">
+            <div class="outer01_img"></div>
+            <div class="outer01_text">
+              <div class="outer01_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <!-- <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 9</div>
+              </div><!--outer01_txt01-->
+
+              <div class="outer01_txt02">[소프텍스] 피치 웜 후드 집업 네츄럴블랙</div>
+              <div class="outer01_txt03">
+                <div class="txt03_01">52,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">89,000</div>
+              </div>
+              <div class="outer01_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="outer02">
+            <div class="outer02_img"></div>
+            <div class="outer02_text">
+              <div class="outer02_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <!-- <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 9</div>
+              </div><!--outer01_txt01-->
+              
+              <div class="outer02_txt02">[소프텍스] 피치 웜 후드 집업 모카베이지</div>
+              <div class="outer02_txt03">
+                <div class="txt03_01">52,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">89,000</div>
+              </div>
+              <div class="outer02_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+          <div class="outer03">
+            <div class="outer03_img"></div>
+            <div class="outer03_text">
+              <div class="outer03_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <!-- <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 9</div>
+              </div><!--outer01_txt01-->
+              
+              <div class="outer03_txt02">[소프텍스] 피치 웜 후드 집업 로즈핑크</div>
+              <div class="outer03_txt03">
+                <div class="txt03_01">52,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">89,000</div>
+              </div>
+              <div class="outer03_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="outer_46 outer">
+
+          <div class="outer04">
+            <div class="outer04_img"></div>
+            <div class="outer04_text">
+              <div class="outer04_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 1,028</div>
+              </div><!--outer01_txt01-->
+              
+              <div class="outer04_txt02">에어라이트 라인 자켓 핑크솔트</div>
+              <div class="outer04_txt03">
+                <div class="txt03_01">39,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">77,000</div>
+              </div>
+              <div class="outer04_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+          <div class="outer05">
+            <div class="outer05_img"></div>
+            <div class="outer05_text">
+              <div class="outer05_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 1,028</div>
+              </div><!--outer01_txt01-->
+              
+              <div class="outer05_txt02">에어라이트 라인 자켓 차콜</div>
+              <div class="outer05_txt03">
+                <div class="txt03_01">39,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">77,000</div>
+              </div>
+              <div class="outer05_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="outer06">
+            <div class="outer06_img"></div>
+            <div class="outer06_text">
+              <div class="outer06_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 1,028</div>
+              </div><!--outer01_txt01-->
+              
+              <div class="outer06_txt02">에어라이트 라인 자켓 베이지</div>
+              <div class="outer06_txt03">
+                <div class="txt03_01">39,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">77,000</div>
+              </div>
+              <div class="outer06_txt04">
+                <div class="txt04_00">new</div>
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div><!--best_outer-->
+    </div><!--sheet02-->
+    <div class="sheet03">
+      <div class="best_acc">
+
+        <div class="acc_13 acc">
+          <div class="acc01">
+            <div class="acc01_img"></div>
+            <div class="acc01_text">
+              <div class="acc01_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <!-- <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 577</div>
+              </div><!--outer01_txt01-->
+
+              <div class="acc01_txt02">싱글 릴리즈볼 베이지</div>
+              <div class="acc01_txt03">
+                <div class="txt03_01">7,200</div>
+                <div class="txt03_02" style="text-decoration: line-through;">13,000</div>
+              </div>
+              <div class="acc01_txt04">
+                <!-- <div class="txt04_00">new</div> -->
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+            </div>
+          </div><!--acc01-->
+
+          <div class="acc02">
+            <div class="acc02_img"></div>
+            <div class="acc02_text">
+              <div class="acc02_txt01">
+                <div class="txt01_01">
+                원컬러
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 1,052</div>
+              </div><!--outer01_txt01-->
+
+              <div class="acc02_txt02">듀얼 레이어마스크(기본형)</div>
+              <div class="acc02_txt03">
+                <div class="txt03_01">4,500</div>
+                <div class="txt03_02" style="text-decoration: line-through;">10,000</div>
+              </div>
+              <div class="acc02_txt04">
+                <!-- <div class="txt04_00">new</div> -->
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+          <div class="acc03">
+            <div class="acc03_img"></div>
+            <div class="acc03_text">
+              <div class="acc03_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <!-- <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 2,242</div>
+              </div><!--outer01_txt01-->
+
+              <div class="acc03_txt02">요가링(기본형&소프트형) 라이트퍼플</div>
+              <div class="acc03_txt03">
+                <div class="txt03_01">3,900</div>
+                <div class="txt03_02" style="text-decoration: line-through;">16,000</div>
+              </div>
+              <div class="acc03_txt04">
+                <!-- <div class="txt04_00">new</div> -->
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="acc_46 acc">
+          <div class="acc04">
+            <div class="acc04_img"></div>
+            <div class="acc04_text">
+              <div class="acc04_txt01">
+                <div class="txt01_01">set item
+                  <!-- <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 2,290</div>
+              </div><!--outer01_txt01-->
+
+              <div class="acc04_txt02">[홈트SET] 요가링 & 릴렉스 밴드</div>
+              <div class="acc04_txt03">
+                <div class="txt03_01">14,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">37,000</div>
+              </div>
+              <div class="acc04_txt04">
+                <!-- <div class="txt04_00">new</div> -->
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+          <div class="acc05">
+            <div class="acc05_img"></div>
+            <div class="acc05_text">
+              <div class="acc05_txt01">
+                <div class="txt01_01">
+                  <!-- <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> -->
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 208</div>
+              </div><!--outer01_txt01-->
+
+              <div class="acc05_txt02">드레스퍼퓸 스윗프레쉬</div>
+              <div class="acc05_txt03">
+                <div class="txt03_01">5,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">16,900</div>
+              </div>
+              <div class="acc05_txt04">
+                <!-- <div class="txt04_00">new</div> -->
+                <div class="txt04_01">당일배송</div>
+                 <!-- <div class="txt04_02">주문폭주</div> -->
+                <div class="txt04_03">리오더X</div> 
+              </div>
+
+            </div>
+          </div>
+
+          <div class="acc06">
+            <div class="acc06_img"></div>
+            <div class="acc06_text">
+              <div class="acc06_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                  <div class="color04"></div>
+                  <div class="color05"></div>
+                  <div class="color06"></div> 
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 1,497</div>
+              </div><!--outer01_txt01-->
+
+              <div class="acc06_txt02">크로스 요가삭스 라이트베이지</div>
+              <div class="acc06_txt03">
+                <div class="txt03_01">6,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">12,000</div>
+              </div>
+              <div class="acc06_txt04">
+                <!-- <div class="txt04_00">new</div> -->
+                <div class="txt04_01">당일배송</div>
+                <!-- <div class="txt04_02">주문폭주</div>
+                <div class="txt04_03">시그니처</div> -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div><!--best_acc-->
+    </div><!--sheet03-->
+    <div class="sheet04">
+      <div class="best_mans">
+
+        <div class="mans_13 mans">
+          <div class="mans01">
+            <div class="mans01_img"></div>
+            <div class="mans01_text">
+              <div class="mans01_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 38</div>
+              </div><!--outer01_txt01-->
+
+              <div class="mans01_txt02">하이테크니컬 티셔츠 화이트</div>
+              <div class="mans01_txt03">
+                <div class="txt03_01">28,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">67,000</div>
+              </div>
+              <div class="mans01_txt04">
+                <div class="txt04_01">당일배송</div>
+              </div>
+
+            </div>
+          </div>
+          <div class="mans02">
+            <div class="mans02_img"></div>
+            <div class="mans02_text">
+              <div class="mans02_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 36</div>
+              </div><!--outer01_txt01-->
+
+              <div class="mans02_txt02">하이테크니컬 티셔츠 브릭민트</div>
+              <div class="mans02_txt03">
+                <div class="txt03_01">28,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">67,000</div>
+              </div>
+              <div class="mans02_txt04">
+                <div class="txt04_01">당일배송</div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="mans03">
+            <div class="mans03_img"></div>
+            <div class="mans03_text">
+              <div class="mans03_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 28</div>
+              </div><!--outer01_txt01-->
+
+              <div class="mans03_txt02">남성 에어 테크 슬랙스 블랙</div>
+              <div class="mans03_txt03">
+                <div class="txt03_01">62,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">148,000</div>
+              </div>
+              <div class="mans03_txt04">
+                <div class="txt04_01">당일배송</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="mans_46 mans">
+          <div class="mans04">
+            <div class="mans04_img"></div>
+            <div class="mans04_text">
+              <div class="mans04_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 79</div>
+              </div><!--outer01_txt01-->
+
+              <div class="mans04_txt02">소로나 홀릭 나시티 딥베이지</div>
+              <div class="mans04_txt03">
+                <div class="txt03_01">18,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">42,000</div>
+              </div>
+              <div class="mans04_txt04">
+                <div class="txt04_01">당일배송</div>
+              </div>
+
+            </div>
+          </div>
+          <div class="mans05">
+            <div class="mans05_img"></div>
+            <div class="mans05_text">
+              <div class="mans05_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 62</div>
+              </div><!--outer01_txt01-->
+
+              <div class="mans05_txt02">3D 피지컬 티셔츠 차콜</div>
+              <div class="mans05_txt03">
+                <div class="txt03_01">24,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">58,000</div>
+              </div>
+              <div class="mans05_txt04">
+                <div class="txt04_01">당일배송</div>
+              </div>
+            </div>
+          </div>
+          <div class="mans06">
+            <div class="mans06_img"></div>
+            <div class="mans06_text">
+              <div class="mans06_txt01">
+                <div class="txt01_01">
+                  <div class="color01"></div>
+                  <div class="color02"></div>
+                  <div class="color03"></div>
+                </div><!--txt01_01-->
+                <div class="txt01_02">리뷰 176</div>
+              </div><!--outer01_txt01-->
+
+              <div class="mans06_txt02">남성 플렉스 페더 조거팬츠 다크네이비</div>
+              <div class="mans06_txt03">
+                <div class="txt03_01">45,000</div>
+                <div class="txt03_02" style="text-decoration: line-through;">109,000</div>
+              </div>
+              <div class="mans06_txt04">
+                <div class="txt04_01">당일배송</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div><!--best_mans-->
+    </div><!--sheet04-->
+
+  </div>
+</section><!--best_sheet_box-->
+
+
+<section class="review">
+  <div class="review_name">
+    <p class="font">포토리뷰</p> 
+    <p>Every where, Every wear!</p> 
+  </div>
+
+  <div class="review_top re">
+    <div class="re01">
+      <img src="./images/review01.jpg" alt="리뷰 mouse_off 이미지 1">
+      <div class="re01_on">
+        <p>[벤츄리]</p> 
+        <p>액티브 벤츄리 조거팬츠 </p>
+      </div>
+    </div>
+    <div class="re02">
+      <img src="./images/review02.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re02_on">
+        <p>[소프텍스]</p>
+        <p>마일드 크롭 티셔츠 그레이핑크</p></div>
+    </div>
+    <div class="re03">
+      <img src="./images/review03.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re03_on">
+        <p>[소프텍스]</p>
+        <p>조거 팬츠</p>
+      </div>
+    </div>
+    <div class="re04">
+      <img src="./images/review04.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re04_on">
+        <p>[홈트용품]</p>
+        <p>요가링</p>
+      </div>
+    </div>
+    <div class="re05">
+      <img src="./images/review05.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re05_on"><p>플렉스 프로 레깅스 + 브라탑 SET</p></div>
+    </div>
+    <div class="re06">
+      <img src="./images/review06.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re06_on"><p>제로 뉴 베이직 레깅스</p></div>
+    </div>
+  </div>
+  <div class="review_bottom re">
+    <div class="re07">
+      <img src="./images/review07.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re07_on"><p>에어라이트 라인 자켓 </p></div>
+    </div>
+    <div class="re08">
+      <img src="./images/review08.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re08_on"><p>코지 데일리 크롭 티셔츠 베이지</p></div>
+    </div>
+    <div class="re09">
+      <img src="./images/review09.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re09_on"><p>데이지 커버업 화이트</p></div>
+    </div>
+    <div class="re10">
+      <img src="./images/review10.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re10_on"><p>플렉스 에어 레깅스</p></div>
+    </div>
+    <div class="re11">
+      <img src="./images/review11.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re11_on"><p>셀라 올데이 와이드팬츠</p></div>
+    </div>
+    <div class="re12">
+      <img src="./images/review12.jpg" alt="리뷰 mouse_off 이미지 2">
+      <div class="re12_on"><p>리브드 랩 티셔츠 블랙</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="new_box">
+  <input type="checkbox" id="chk_new" checked>
+  <div class="new_name">
+    <label for="chk_new" id="btn">+</label>
+    신상품
+  </div>
+  <div class="new_top new">
+    <div class="new01">
+      <div class="new01_img"></div>
+      <div class="new01_txt">
+        <div class="new01_txt01">
+          <div class="txt01_01">
+            <div class="color01"></div>
+            <div class="color02"></div>
+            <div class="color03"></div>
+            <div class="color04"></div>
+            <!-- <div class="color05"></div>
+            <div class="color06"></div> -->
+          </div><!--txt01_01-->
+          <div class="txt01_02">리뷰 1,904</div>
+        </div><!--outer01_txt01-->
+        
+        <div class="new01_txt02">제로 윈터 스트레잇 기모팬츠 포레그린</div>
+        <div class="new01_txt03">
+          <div class="txt03_01">32,000</div>
+          <div class="txt03_02" style="text-decoration: line-through;">56,000</div>
+        </div>
+        <div class="new01_txt04">
+          <div class="txt04_00">new</div>
+          <div class="txt04_01">당일배송</div>
+          <!-- <div class="txt04_02">주문폭주</div>-->
+          <div class="txt04_03">시그니처</div> 
+        </div>
+
+      </div>
+    </div>
+    <div class="new02">
+      <div class="new02_img"></div>
+      <div class="new02_txt">
+        <div class="new02_txt01">
+          <div class="txt01_01">
+            <div class="color01"></div>
+            <div class="color02"></div>
+            <div class="color03"></div>
+            <div class="color04"></div>
+            <div class="color05"></div>
+            <div class="color06"></div>
+          </div><!--txt01_01-->
+          <div class="txt01_02">리뷰 9</div>
+        </div><!--outer01_txt01-->
+        
+        <div class="new02_txt02">플렉스-X 기모레깅스 그레이그린</div>
+        <div class="new02_txt03">
+          <div class="txt03_01">39,000</div>
+          <div class="txt03_02" style="text-decoration: line-through;">77,000</div>
+        </div>
+        <div class="new02_txt04">
+          <div class="txt04_00">new</div>
+          <div class="txt04_01">당일배송</div>
+          <!-- <div class="txt04_02">주문폭주</div>-->
+          <div class="txt04_03">시그니처</div> 
+        </div>
+
+      </div>
+    </div>
+    <div class="new03">
+      <div class="new03_img"></div>
+      <div class="new03_txt">
+        <div class="new03_txt01">
+          <div class="txt01_01">
+            <div class="color01"></div>
+            <div class="color02"></div>
+            <div class="color03"></div>
+            <!-- <div class="color04"></div>
+            <div class="color05"></div>
+            <div class="color06"></div> -->
+          </div><!--txt01_01-->
+          <div class="txt01_02">리뷰 9</div>
+        </div><!--outer01_txt01-->
+        
+        <div class="new03_txt02">[소프텍스] 피치 웜 후드집업 로즈핑크</div>
+        <div class="new03_txt03">
+          <div class="txt03_01">52,000</div>
+          <div class="txt03_02" style="text-decoration: line-through;">89,000</div>
+        </div>
+        <div class="new03_txt04">
+          <div class="txt04_00">new</div>
+          <div class="txt04_01">당일배송</div>
+          <!-- <div class="txt04_02">주문폭주</div>-->
+          <!-- <div class="txt04_03">시그니처</div>  -->
+        </div>
+
+
+      </div>
+    </div>
+    <div class="new04">
+      <div class="new04_img"></div>
+      <div class="new04_txt">
+        <div class="new04_txt01">
+          <div class="txt01_01">
+            <div class="color01"></div>
+            <div class="color02"></div>
+            <div class="color03"></div>
+            <!-- <div class="color04"></div>
+            <div class="color05"></div>
+            <div class="color06"></div> -->
+          </div><!--txt01_01-->
+          <div class="txt01_02">리뷰 9</div>
+        </div><!--outer01_txt01-->
+        
+        <div class="new04_txt02">[소프텍스] 피치 웜 후드집업 모카베이지</div>
+        <div class="new04_txt03">
+          <div class="txt03_01">52,000</div>
+          <div class="txt03_02" style="text-decoration: line-through;">89,000</div>
+        </div>
+        <div class="new04_txt04">
+          <div class="txt04_00">new</div>
+          <div class="txt04_01">당일배송</div>
+          <!-- <div class="txt04_02">주문폭주</div>-->
+          <!-- <div class="txt04_03">시그니처</div>  -->
+        </div>
+
+
+      </div>
+    </div>
+  </div><!--new_top-->
+
+  <div class="new_mid_bottom">
+
+    <div class="new_mid new">
+      <div class="new05">
+        <div class="new05_img"></div>
+        <div class="new05_txt">
+          <div class="new05_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+              <div class="color03"></div>
+              <!-- <div class="color04"></div>
+              <div class="color05"></div>
+              <div class="color06"></div> -->
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 1,234</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new05_txt02">제로 기모 레깅스 딥차콜</div>
+          <div class="new05_txt03">
+            <div class="txt03_01">52,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">89,000</div>
+          </div>
+          <div class="new05_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <!-- <div class="txt04_03">시그니처</div>  -->
+          </div>
+
+        </div>
+      </div>
+      <div class="new06">
+        <div class="new06_img"></div>
+        <div class="new06_txt">
+          <div class="new06_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+              <div class="color03"></div>
+              <div class="color04"></div>
+              <div class="color05"></div>
+              <div class="color06"></div> 
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 9</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new06_txt02">플렉스-X 기모 레깅스 </div>
+          <div class="new06_txt03">
+            <div class="txt03_01">32,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">59,000</div>
+          </div>
+          <div class="new06_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <div class="txt04_03">시그니처</div>  
+          </div>
+        </div>
+      </div>
+      <div class="new07">
+        <div class="new07_img"></div>
+        <div class="new07_txt">
+          <div class="new07_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+              <div class="color03"></div>
+              <div class="color04"></div>
+              <div class="color05"></div>
+              <div class="color06"></div> 
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 9</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new07_txt02">플렉스-X 기모 레깅스 블랙</div>
+          <div class="new07_txt03">
+            <div class="txt03_01">32,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">59,000</div>
+          </div>
+          <div class="new07_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <div class="txt04_03">시그니처</div>  
+          </div>
+
+        </div>
+      </div>
+      <div class="new08">
+        <div class="new08_img"></div>
+        <div class="new08_txt">
+          <div class="new08_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+              <div class="color03"></div>
+              <div class="color04"></div>
+              <div class="color05"></div>
+              <div class="color06"></div> 
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 9</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new08_txt02">소프터치 루즈핏 롱스리브 티셔츠 베이지</div>
+          <div class="new08_txt03">
+            <div class="txt03_01">24,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">48,000</div>
+          </div>
+          <div class="new08_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <!-- <div class="txt04_03">시그니처</div>   -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="new_bottom new">
+      <div class="new09">
+        <div class="new09_img"></div>
+        <div class="new09_txt">
+          <div class="new09_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+              <!-- <div class="color03"></div>
+              <div class="color04"></div>
+              <div class="color05"></div>
+              <div class="color06"></div>  -->
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 63</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new09_txt02">리브드 랩 티셔츠 핑크</div>
+          <div class="new09_txt03">
+            <div class="txt03_01">28,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">47,000</div>
+          </div>
+          <div class="new09_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <!-- <div class="txt04_03">시그니처</div>   -->
+          </div>
+
+        </div>
+      </div>
+      <div class="new10">
+        <div class="new10_img"></div>
+        <div class="new10_txt">
+          <div class="new10_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+               <div class="color03"></div>
+              <div class="color04"></div>
+              <!--<div class="color05"></div>
+              <div class="color06"></div>  -->
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 65</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new10_txt02">플렉스 에어 스텔라 브라탑 차콜</div>
+          <div class="new10_txt03">
+            <div class="txt03_01">34,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">62,000</div>
+          </div>
+          <div class="new10_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <div class="txt04_03">시그니처</div> 
+          </div>
+
+        </div>
+      </div>
+      <div class="new11">
+        <div class="new11_img"></div>
+        <div class="new11_txt">
+          <div class="new11_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+              <!--<div class="color03"></div>
+              <div class="color04"></div>
+              <div class="color05"></div>
+              <div class="color06"></div>  -->
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 52</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new11_txt02">시그니처 스몰로고 크롭 맨투맨 </div>
+          <div class="new11_txt03">
+            <div class="txt03_01">39,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">79,000</div>
+          </div>
+          <div class="new11_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <!-- <div class="txt04_03">시그니처</div>  -->
+          </div>
+
+
+        </div>
+      </div>
+      <div class="new12">
+        <div class="new12_img"></div>
+        <div class="new12_txt">
+          <div class="new12_txt01">
+            <div class="txt01_01">
+              <div class="color01"></div>
+              <div class="color02"></div>
+             <div class="color03"></div>
+              <div class="color04"></div>
+               <!--<div class="color05"></div>
+              <div class="color06"></div>  -->
+            </div><!--txt01_01-->
+            <div class="txt01_02">리뷰 113</div>
+          </div><!--outer01_txt01-->
+          
+          <div class="new12_txt02">코지 데일리 크롭 티셔츠 핑크 </div>
+          <div class="new12_txt03">
+            <div class="txt03_01">22,000</div>
+            <div class="txt03_02" style="text-decoration: line-through;">40,000</div>
+          </div>
+          <div class="new12_txt04">
+            <div class="txt04_00">new</div>
+            <div class="txt04_01">당일배송</div>
+            <!-- <div class="txt04_02">주문폭주</div>-->
+            <!-- <div class="txt04_03">시그니처</div>  -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div><!--new_mid_bottom-->
+
+</section><!--new-->
+
+<div class="signature_name">Skullpig Signature</div>
+
+  
+  <input type="radio"  name="rad" id="rad_01" checked>
+  <input type="radio"  name="rad" id="rad_02">
+  <input type="radio"  name="rad" id="rad_03">
+  <input type="radio"  name="rad" id="rad_04">
+  <input type="radio"  name="rad" id="rad_05">
+
+
+
+  <section class="signature_box">
+
+
+  <div class="signature_label">
+    <label for="rad_01" class="sig01">Original</label>
+    <label for="rad_02" class="sig02">Pro</label>
+    <label for="rad_03" class="sig03">Feather</label>
+    <label for="rad_04" class="sig04">Air</label>
+    <label for="rad_05" class="sig05">X</label>
+  </div><!--signature_label-->
+
+  <div class="signature_sheet">
+    <div class="signature_sheet01">
+      <div class="sig01_01">
+        <img src="./images/original01.jpg" alt="">
+      </div>
+      <div class="sig01_02">
+        <img src="./images/original02.jpg" alt="">
+      </div>
+      <div class="sig01_03">
+        <img src="./images/original03.jpg" alt="">
+      </div>
+    </div><!--signature_sheet01-->
+
+    <div class="signature_sheet02">
+      <div class="sig02_01">
+        <img src="./images/pro01.jpg" alt="">
+      </div>
+      <div class="sig02_02">
+        <img src="./images/pro02.jpg" alt="">
+      </div>
+      <div class="sig02_03">
+        <img src="./images/pro03.jpg" alt="">
+      </div>
+    </div><!--signature_sheet02-->
+ 
+    <div class="signature_sheet03">
+      <div class="sig03_01">
+        <img src="./images/feather01.jpg" alt="">
+      </div>
+      <div class="sig03_02">
+        <img src="./images/feather02.jpg" alt="">
+      </div>
+      <div class="sig03_03">
+        <img src="./images/feather03.jpg" alt="">
+      </div>
+    </div><!--signature_sheet03-->
+   
+    <div class="signature_sheet04">
+      <div class="sig04_01">
+        <img src="./images/air01.jpg" alt="">
+      </div>
+      <div class="sig04_02">
+        <img src="./images/air02.jpg" alt="">
+      </div>
+      <div class="sig04_03">
+        <img src="./images/air03.jpg" alt="">
+      </div>
+    </div><!--signature_sheet04-->
+   
+    <div class="signature_sheet05">
+      <div class="sig05_01">
+        <img src="./images/x01.jpg" alt="">
+      </div>
+      <div class="sig05_02">
+        <img src="./images/x02.jpg" alt="">
+      </div>
+      <div class="sig05_03">
+        <img src="./images/x03.jpg" alt="">
+      </div>
+    </div><!--signature_sheet05-->
+
+
+  </div><!--signature_sheet-->
+
+</section><!--signature_box-->
+
+
+<aside class="top">
+  <input type="checkbox" id="chk_more">
+
+    <div class="more_box">
+    <a class="bag"><i class="fa-solid fa-bag-shopping"></i></a>
+    <a class="time"><i class="fa-solid fa-clock"></i></a>
+  </div>
+  <label for="chk_more">
+  <a class="more"><i class="fa-solid fa-plus"></i></a></label>
+  <a href="#header" class="top_icon"><i class="fa-solid fa-angle-up"></i></a>
+</aside>
+
+<!-- <aside class="wing_box">
+<input type="checkbox" id="chk_wing">
+<div class="wing_banner">
+    <label for="chk_wing" class="btn_open"><i class="fa-solid fa-cart-shopping"></i></label>
+    <label for="chk_wing" class="btn_close"><i class="fa-solid fa-xmark"></i></label></label>
+    <div class="wing_text">
+      장바구니
+    </div>
+</div>
+</aside> -->
+
+<footer class="footer_box">
+  <div class="footer">
+    <div class="footer_logo">
+      <a href="#header">SKULLPIG</a>
+    </div><!--footer_logo-->
+
+    <div class="footer_text">
+      <div class="footer01">
+        <p><a href="#">회사안내</a></p>
+        <p><a href="#">이용약관</a></p>
+        <p><a href="#">개인정보처리방침</a></p>
+        <p><a href="#">쇼핑몰이용안내</a></p>
+        <p><a href="#">고객센터</a></p>
+        <p><a href="#">배송조회</a></p>
+    
+      
+
+      <p>교환/반품 주소지 : 서울특별시 광진구 강변역로2 광진우체국 소포실 제이스버디앞</p>
+      <p>(주)제이스 버디 대표이사:조준호 사업자등록번호 847-88-00218<a href="#" class="gray">(사업자정보확인)</a></p>
+      <p>통신판매업신고번호:제2015-서울성동-0844호 KCP에스크로 구매안전 서비스<a href="#" class="gray">(서비스가입사실확인)</a></p>
+      <p>사업장 주소:04782 서울특별시 광진구 강변역로2 광진우체국 소포실 제이스버디앞</p>
+      <p>개인정보취급관리자:이민지(minji@jaysbuddy.com</p>
+      <p>Copyright @ 2015 스컬피그 all right reserved.</p>
+    </div>
+
+</div><!--footer_text-->
+<div class="footer02">
+  <div class="community">
+    <p class="footername">COMMUNITY</p>
+    <p>공지사항</p>
+    <p>포토리뷰</p>
+    <p>문의하기</p>
+  </div>
+  <div class="bank">
+    <p class="footername">BANK INFO</p>
+    <p>기업 027-137479-01-020</p>
+    <p>예금주:(주)제이스버디</p>
+  </div>
+  <div class="call_center">
+    <p class="footername">CALL CENTER</p>
+    <p>070-7733-4698</p>
+    <p>평일:10:00 ~ 17:00</p>
+    <p>점심:12:30 ~ 13:30</p>
+    <p>(토/일/공휴일 휴무)</p>
+  </div>
+</div><!--footer02-->
+
+<div class="sns_box">
+  <div class="sns">
+    <div class="sns01">
+      <a href="#"><img src="./images/sns01.jpg" alt=""></a>
+    </div>
+    <div class="sns02">
+      <a href="#"><img src="./images/sns02.jpg" alt=""></a>
+    </div>
+    <div class="sns03">
+      <a href="#"><img src="./images/sns03.jpg" alt=""></a>
+    </div>
+    <div class="sns04">
+      <a href="#"><img src="./images/sns04.jpg" alt=""></a>
+    </div>
+    <div class="sns05">
+      <a href="#"><img src="./images/sns05.jpg" alt=""></a>
+    </div>
+  </div>
+</div>
+
+</div><!--footer-->
+
+</footer>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+
+
+  
+</body>
+</html>
