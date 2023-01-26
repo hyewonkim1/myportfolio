@@ -35,11 +35,10 @@ $(function(){
   $(window).scroll(function(){
 
     if($(this).scrollTop() == $('.page02').offset().top) {
-      $('.page02-1').fadeIn(500);
-      $('.page02-2').delay(500).fadeIn(500);
+      $('.sub_box02').fadeIn(500);
     } else {
-      $('.page02-1').fadeOut();
-      $('.page02-2').fadeOut();
+      $('.sub_box02').fadeOut();
+
     }
 
     if($(this).scrollTop() == $('.page03').offset().top) {
