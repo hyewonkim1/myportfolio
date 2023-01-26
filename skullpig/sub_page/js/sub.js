@@ -147,8 +147,8 @@ section.appendChild(bestDiv)
   let newWin = window.open('join.html')
   }
 
-// sub page 아무거나 클릭하면 detail_page로 이동 
-$('.bottom_list>div>img').click(function(){
+// sub page에서 detail_page로 이동 
+$('.bottom_list>div:first-child').click(function(){
   location.href = '../detail_page/detail_index.html';
 });
 
@@ -175,36 +175,27 @@ $(function(){
       
   $('.top_icon').click(function(e){
    e.preventDefault();
-   /*$('html, body').stop().animate({
-     scrollTop:0 //화면의 제일 위 좌표.
-   },1000);*/
 
-   //1.좌표로 이용
-   // $(window).scrollTo({top:0,left:0}, 500);
-
-   //2.플러그인
-   //hash 이용.
    $(window).scrollTo(this.hash || 0, 500);
- })//bnt_top click_event
+ })
 
 
 
 
  $(".openPopup").on("click", function(event) {  
-  //팝업오픈 버튼 누르면
   $(".login_popup").show(); 
   $('#user_id').focus();  
-  //로그인창 오픈
   $("body").append('<div class="backon"></div>'); 
-  //뒷배경 생성
+
   });
-  
+
+  //login 
   $("body").on("click", function(event) { 
       if(event.target.className == 'login_close' || event.target.className == 'backon'){
           $(".login_popup").hide(); 
             $(".backon").hide();
       }
-    });//로그인 화면 뜨는거 
+    });
 
     let id = 'green';
     let pw = 'abc';
@@ -220,15 +211,10 @@ $(function(){
 
       $('.button_login').click(function(){
 
-        // userId = $('#user_id').val();
-        // userId = $('#user_id').val();
-
-
       if(id == userId) {
        if(pw == userPw) {
             alert(userId + '님 방문을 환영합니다!');
             $('#login').click();
-            //팝업창 x버튼 라벨을 login버튼과 id 같이 쓴다. 
           }else {
             alert('비밀번호가 틀렸습니다.')
           }
@@ -238,10 +224,9 @@ $(function(){
       });
 
 
-    });// 로그인 과정
+    });
         
     $('#user_id').val('').focus();
     $('#user_pw').val('');
-    // 기존에 있는 글자 clear하는 효과.
     
 })

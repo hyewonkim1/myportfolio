@@ -255,7 +255,12 @@ img {display: block;}
       background-color: white;
       float: left;
     }
-
+    /*----- subpage point -----*/
+    .lnb02 .point {
+      border: 3px solid black;
+      box-sizing: border-box;
+    }
+   
     .lnb01 {
       position: relative;
       z-index: 300;

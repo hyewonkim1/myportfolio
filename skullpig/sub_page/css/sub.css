@@ -352,6 +352,7 @@ img {display: block;}
   }
   /*swiper 01*/
   .swiper .swiper01_txt {
+    margin-left: 2px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -575,6 +576,7 @@ img {display: block;}
 
   /*swiper 04*/
   .swiper .swiper04_txt {
+    margin-left: 2px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1747,6 +1749,12 @@ img {display: block;}
     flex-wrap: wrap;
   }
 
+  /*----- detailpage point -----*/
+  .bottom_list>div:first-child {
+    border: 3px solid black;
+    box-sizing: border-box;
+  }
+
   .container .bottom_list .best_box {
     width: 304px;
     margin: 7px;
@@ -1754,7 +1762,7 @@ img {display: block;}
   
   .container .bottom_list .best_box img {
     display: block;
-    width: 304px;
+    width: 100%;
     height: 450px;
   }
 
@@ -2040,7 +2048,7 @@ img {display: block;}
   }
 
   .color_box {
-    width: 200px;
+    width: 193px;
     height: 20px;
     display: flex;
   }

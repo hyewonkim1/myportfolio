@@ -835,6 +835,24 @@ a{text-decoration: none; color: black;}
 .wrap .page04 .sub_box04 .page04-2 .skullpig_txt02 .txt02-01>span.bold {
   font-weight: bold;
 }
+.wrap .page04 .sub_box04 .page04-2 .skullpig_txt02 .txt02-01 .report_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrap .page04 .sub_box04 .page04-2 .skullpig_txt02 .txt02-01 .report_btn:hover {
+  background-color: #131140;
+  transition: all 0.5s;
+}
+.wrap .page04 .sub_box04 .page04-2 .skullpig_txt02 .txt02-01 .report_btn:hover a{
+  color: white;
+  transition: all 0.5s;
+}
 
 
 
@@ -1064,6 +1082,24 @@ a{text-decoration: none; color: black;}
 .wrap .page05 .sub_box05 .busan_txt02 .txt02-01 .bold {
   font-weight: bold;
 }
+.wrap .page05 .sub_box05 .page05-2 .busan_txt02 .txt02-01 .report_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrap .page05 .sub_box05 .page05-2 .busan_txt02 .txt02-01 .report_btn:hover {
+  background-color: #E50048;
+  transition: all 0.5s;
+}
+.wrap .page05 .sub_box05 .page05-2 .busan_txt02 .txt02-01 .report_btn:hover a{
+  color: white;
+  transition: all 0.5s;
+}
 
 /*----- page06 -----*/
 .wrap .sub_box06 {
@@ -1188,7 +1224,7 @@ a{text-decoration: none; color: black;}
 }
 .wrap .page07 .sub_box07 .portfolio_txt01 {
   width: 500px;
-  height: 170px;
+  height: 180px;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
   font-family: 'Nanum Pen Script', cursive;
@@ -1203,7 +1239,6 @@ a{text-decoration: none; color: black;}
 .wrap .page07 .sub_box07 .portfolio_txt02 {
   width: 500px;
   height: 225px;
- 
 }
 .wrap .page07 .sub_box07 .portfolio_txt02 .txt02-01
 .div {
