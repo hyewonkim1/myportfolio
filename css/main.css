@@ -1105,7 +1105,6 @@ a{text-decoration: none; color: black;}
   height: 40px;
   line-height: 40px;
   text-align: left;
-
 }
 .wrap .sub_box06 .page06_down {
   height: 400px;
@@ -1115,18 +1114,110 @@ a{text-decoration: none; color: black;}
 .wrap .page06 .sub_box06 .page06-1 {
   width: 600px;
   height: 550px;
+  position: relative;
 }
+/* imac position */
+.wrap .page06 .sub_box06 .page06-1 .page06-1-imgtxt {
+  width: 300px;
+  height: 300px;
+  /* background-color: cornflowerblue; */
+  text-align: center;
+  position: absolute;
+  top: 95px;
+  left: 55px;
+}
+/* imac mockup */
+.wrap .page06 .sub_box06 .page06-1_img {
+  width: 300px;
+  height: 260px;
+  cursor: pointer;
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_img img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_txt {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  margin: 0 auto;
+  line-height: 30px;
+  /* background-color: aliceblue; */
+  margin-top: 10px;
+
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_txt .txt01-01 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-right: 5px;
+
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_txt .txt01-01 img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_txt .txt01-02 {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px #ccc;
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_txt .txt01-02:hover {
+  transition: 0.5s;
+  background-color: black;
+}
+.wrap .page06 .sub_box06 .page06-1 .page06-1_txt .txt01-02:hover a {
+  transition: 0.5s;
+  color: white;
+  font-weight: bold;
+}
+
 .wrap .page06 .sub_box06 .page06-2 {
-  width: 400px;
+  width: 500px;
   height: 550px;
 }
 .wrap .page06 .sub_box06 .react_txt01 {
-  width: 400px;
-  height: 275px;
+  width: 500px;
+  height: 180px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 26px;
+}
+.wrap .page06 .sub_box06 .react_txt01 .txt01-01>p:first-child {
+  margin-top: 40px;
+}
+.wrap .page06 .sub_box06 .react_txt01 .txt01-01>p:last-child {
+  margin-left: 25px;
 }
 .wrap .page06 .sub_box06 .react_txt02 {
-  width: 400px;
-  height: 275px;
+  width: 500px;
+  height: 225px;
+}
+.wrap .page06 .sub_box06 .react_txt02 .txt02-01
+.div {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.wrap .page06 .sub_box06 .react_txt02 .txt02-01
+.div_navy {
+  background-color: #131140;
+}
+.wrap .page06 .sub_box06 .react_txt02 .txt02-01
+.div_ivory {
+  background-color: #ffffd3;
+}
+.wrap .page06 .sub_box06 .react_txt02 .txt02-01 .bold {
+  font-weight: bold;
 }
 
 

@@ -156,25 +156,38 @@ document.addEventListener('DOMContentLoaded',() => {
    img01.addEventListener('mouseover', function() {
      this.setAttribute('src', './images/Github_on.png')
  
-   },5000)
+   })
  
    img01.addEventListener('mouseout', () => {
      img01.setAttribute('src','./images/Github_off.png')
-   },5000)
+   })
+
+
+
+    let img03 = document.querySelector('.page06 .txt01-01 img')
+
+    img03.addEventListener('mouseover', function() {
+      this.setAttribute('src', './images/Github_on.png')
+  
+    })
+  
+    img03.addEventListener('mouseout', () => {
+      img03.setAttribute('src','./images/Github_off.png')
+    })
 
 
      
-    // github icon mouseover event 
+ 
     let img04 = document.querySelector('.page07 .txt01-01 img')
 
     img04.addEventListener('mouseover', function() {
       this.setAttribute('src', './images/Github_on.png')
   
-    },5000)
+    })
   
     img04.addEventListener('mouseout', () => {
       img04.setAttribute('src','./images/Github_off.png')
-    },5000)
+    })
   
   
 })
