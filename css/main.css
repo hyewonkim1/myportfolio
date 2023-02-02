@@ -1209,12 +1209,12 @@ a{text-decoration: none; color: black;}
   margin-top: 5px;
 }
 .wrap .page06 .sub_box06 .react_txt02 .txt02-01
-.div_navy {
-  background-color: #131140;
+.div_darkgray {
+  background-color: #303333;
 }
 .wrap .page06 .sub_box06 .react_txt02 .txt02-01
-.div_ivory {
-  background-color: #ffffd3;
+.div_white {
+  background-color: #ffff;
 }
 .wrap .page06 .sub_box06 .react_txt02 .txt02-01 .bold {
   font-weight: bold;
