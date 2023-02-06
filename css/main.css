@@ -193,8 +193,8 @@ a{text-decoration: none; color: black;}
   transform: translate(-10px,-10px);
 } */
 .wrap .page02 .sub_box02 .page02-1 .img_box {
-  width: 200px;
-  height: 230px;
+  width: 250px;
+  height: 280px;
   margin: 0 auto;
   border: 1px solid black;
   box-sizing: border-box;
@@ -211,7 +211,7 @@ a{text-decoration: none; color: black;}
   width: 300px;
   /* height: 500px; */
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 .wrap .page02 .sub_box02 .page02-1 .txt_box p {
   margin-bottom: 5px;
@@ -223,8 +223,11 @@ a{text-decoration: none; color: black;}
 .wrap .page02 .sub_box02 .page02-1 .txt_box .name {
   font-size: 36px;
   font-weight: bold;
-  padding-top: 60px;
+  padding-top: 30px;
   font-family: 'Nanum Pen Script', cursive;
+}
+.wrap .page02 .sub_box02 .page02-1 .txt_box .margin {
+  margin-right: 5px;
 }
 .wrap .page02 .sub_box02 .page02-2 {
   width: 650px;
@@ -248,7 +251,12 @@ a{text-decoration: none; color: black;}
   margin-top: 20px;
 }
 .wrap .page02 .sub_box02 .page02-2 .page02-2-second p {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+.wrap .page02 .sub_box02 .page02-2 .page02-2-second .thanks {
+  font-size: 34px;
+  font-family: 'Nanum Pen Script', cursive;
+  margin-top: 10px;
 }
 
 .highlight {
@@ -260,7 +268,7 @@ a{text-decoration: none; color: black;}
   width: 0;
   height: 12px;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: rgb(133, 194, 255);
   position: absolute;
   bottom: 0;
@@ -272,13 +280,16 @@ a{text-decoration: none; color: black;}
 .wrap .page02 .sub_box02 .page02-2-third {
   width: 600px;
   margin: 0 auto;
-  font-size: 13px;
-  margin-top: 80px;
+  margin-top: 55px;
+}
+.wrap .page02 .sub_box02 .page02-2-third p {
+  margin-left: 10px;
+  font-size: 14px;
 }
 .wrap .page02 .sub_box02 .page02-2-third>p:first-child {
-  font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 18px;
 }
 /*--------- page03 ---------*/
 
@@ -1378,7 +1389,7 @@ a{text-decoration: none; color: black;}
 }
 
 .wrap .page08 .sub_box08 .thanks_box {
-  width: 500px;
+  width: 1000px;
   height: 100px;
   /* background-color: rgb(13, 184, 184); */
   margin: 0 auto;
@@ -1397,7 +1408,7 @@ a{text-decoration: none; color: black;}
   display: inline-block;
   animation: bounce 0.3s ease infinite alternate;
   font-family: 'Nanum Pen Script', cursive;
-  font-size: 90px;
+  font-size: 120px;
   color: rgb(253, 251, 252);
   text-shadow:  0 1px 0 #CCC,
   0 2px 0 #CCC,
@@ -1436,12 +1447,10 @@ a{text-decoration: none; color: black;}
 
 .wrap .page08 .sub_box08 .contact_box {
   width: 1000px;
-  height: 500px;
+  height: 400px;
   /* height: 120px; */
   margin: 0 auto;
   text-align: center;
-  font-size: 40px;
-
   /* background-color: aliceblue; */
   /* -webkit-backdrop-filter: grayscale(.8);
   backdrop-filter: grayscale(.8); */
@@ -1449,31 +1458,30 @@ a{text-decoration: none; color: black;}
   margin-top: 70px;
 }
 .wrap .page08 .sub_box08 .contact_box .contact {
-  width: 500px;
-  height: 300px;
+  width: 1000px;
+  height: 400px;
   margin: 0 auto;
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   font-family: 'Nanum Pen Script', cursive;
-  font-size: 48px;
-  color: rgb(253, 251, 252);
-  text-shadow:  0 1px 0 #CCC,
-  0 2px 0 #CCC,
-  0 3px 0 #CCC,
-  0 4px 0 #CCC,
-  0 5px 0 #CCC,
-  0 6px 0 transparent,
-  0 7px 0 transparent,
-  0 8px 0 transparent,
-  0 9px 0 transparent,
-  0 10px 10px rgba(0, 0, 0, .4);
+  font-size: 42px;
+  color: white;
+  
+}
+.wrap .page08 .sub_box08 .contact_box .contact>p:first-child {
+  padding-top: 20px;
+}
+.wrap .page08 .sub_box08 .contact_box .contact .contactinfo {
+  margin-top: 60px;
+}
+.wrap .page08 .sub_box08 .contact_box .contact .info {
+  text-align: left;
+  margin-left: 350px;
+}
+.wrap .page08 .sub_box08 .contact_box .contact .margin {
+  margin-right: 10px;
 }
 
-.wrap .page08 .sub_box08 .contact_box .contact>p:first-child {
-  padding-top: 55px;
-}
-.wrap .page08 .sub_box08 .contact_box .contact>p:nth-child(2) { animation-delay: 0.1s; }
-.wrap .page08 .sub_box08 .contact_box .contact>p:nth-child(3) { animation-delay: 0.2s; }
 
 .wrap .page08 .copyright_box {
   position: fixed;
