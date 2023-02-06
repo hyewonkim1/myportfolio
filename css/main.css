@@ -194,7 +194,7 @@ a{text-decoration: none; color: black;}
 } */
 .wrap .page02 .sub_box02 .page02-1 .img_box {
   width: 250px;
-  height: 280px;
+  height: 300px;
   margin: 0 auto;
   border: 1px solid #eee;
   box-sizing: border-box;
@@ -223,7 +223,7 @@ a{text-decoration: none; color: black;}
 .wrap .page02 .sub_box02 .page02-1 .txt_box .name {
   font-size: 36px;
   font-weight: bold;
-  padding-top: 30px;
+  padding-top: 10px;
   font-family: 'Nanum Pen Script', cursive;
 }
 .wrap .page02 .sub_box02 .page02-1 .txt_box .margin {
@@ -1447,7 +1447,7 @@ a{text-decoration: none; color: black;}
 
 .wrap .page08 .sub_box08 .contact_box {
   width: 1000px;
-  height: 400px;
+  height: 500px;
   /* height: 120px; */
   margin: 0 auto;
   text-align: center;
@@ -1459,7 +1459,7 @@ a{text-decoration: none; color: black;}
 }
 .wrap .page08 .sub_box08 .contact_box .contact {
   width: 1000px;
-  height: 400px;
+  height: 420px;
   margin: 0 auto;
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
@@ -1480,10 +1480,10 @@ a{text-decoration: none; color: black;}
 }
 .wrap .page08 .sub_box08 .contact_box .contact .con_box .box01 {
   width: 230px;
-  height: 300px;
-  margin: 0 auto;
+  height: 280px;
   border-radius: 50%;
   overflow: hidden;
+  margin-left: 150px;
 }
 .wrap .page08 .sub_box08 .contact_box .contact .con_box .box01 img {
   width: 100%;
